@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             // Create a CommissionEmployee object
-            CommissionEmployee employee = new CommissionEmployee("John", "Doe", "123-45-6789", 5000.0, 0.1);
+            CommissionEmployee employee = new CommissionEmployee("Mark", "Dabuo", "123-45-6789", 5000.0, 0.1);
             // Display employee's details
             System.out.println(employee);
 
@@ -28,7 +28,7 @@ public class Main {
 
         try {
             // Test validation by setting invalid values
-            CommissionEmployee employee = new CommissionEmployee("Jane", "Doe", "987-65-4321", 7000.0, 0.2);
+            CommissionEmployee employee = new CommissionEmployee("Ama", "Danquah", "987-65-4321", 7000.0, 0.2);
             employee.setCommissionRate(1.5); // Should throw exception
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
